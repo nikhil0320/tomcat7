@@ -1,0 +1,2 @@
+aws s3 cp s3://<%= node['tomcat7']['bucket_name'] %>/<%= node['tomcat7']['file_name'] %> /var/lib/tomcat7/webapps/<%= node['tomcat7']['file_name'] %> --region <%= node['tomcat7']['region'] %>  
+chmod +x /var/lib/tomcat7/webapps/<%= node['tomcat7']['file_name'] %>
